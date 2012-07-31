@@ -2,7 +2,6 @@ nose
 mock
 coverage
 pep8
-cmd2
+cliff
 distribute
-PrettyTable
 tablib

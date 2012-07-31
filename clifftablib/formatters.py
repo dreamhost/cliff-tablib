@@ -1,7 +1,7 @@
 """Output formatters using tablib.
 """
 
-from .base import ListFormatter, SingleFormatter
+from cliff.formatters.base import ListFormatter, SingleFormatter
 
 import tablib
 

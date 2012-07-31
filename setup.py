@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-PROJECT = 'cliff'
-
 # Change docs/source/conf.py too!
 VERSION = '1.0'
 
@@ -21,15 +19,9 @@ try:
 except IOError:
     long_description = ''
 
-install_requires = ['distribute',
-                    'PrettyTable',
-                    'cmd2',
+install_requires = ['cliff',
                     'tablib',
                     ]
-try:
-    import argparse
-except ImportError:
-    install_requires.append('argparse')
 
 
 ##############################################################################
@@ -128,17 +120,16 @@ def find_package_data(
 
 
 setup(
-    name=PROJECT,
+    name='cliff-tablib',
     version=VERSION,
 
-    description='Command Line Interface Formulation Framework',
+    description='tablib formatters for cliff',
     long_description=long_description,
 
     author='Doug Hellmann',
     author_email='doug.hellmann@gmail.com',
 
-    url='https://github.com/dreamhost/cliff',
-    download_url='https://github.com/dreamhost/cliff/tarball/master',
+    url='https://github.com/dreamhost/cliff-tablib',
 
     classifiers=['Development Status :: 3 - Alpha',
                  'License :: OSI Approved :: Apache Software License',
@@ -155,7 +146,7 @@ setup(
 
     scripts=[],
 
-    provides=['cliff',
+    provides=['clifftablib',
               ],
     install_requires=install_requires,
 
@@ -165,25 +156,21 @@ setup(
     # Scan the input for package information
     # to grab any data files (text, images, etc.)
     # associated with sub-packages.
-    package_data=find_package_data(PROJECT,
-                                   package=PROJECT,
+    package_data=find_package_data('clifftablib',
+                                   package='clifftablib',
                                    only_in_packages=False,
                                    ),
 
     entry_points={
         'cliff.formatter.list': [
-            'table = cliff.formatters.table:TableFormatter',
-            'csv = cliff.formatters.commaseparated:CSVLister',
-            'yaml = cliff.formatters.tablibformatters:YamlFormatter',
-            'html = cliff.formatters.tablibformatters:HtmlFormatter',
-            'json = cliff.formatters.tablibformatters:JsonFormatter',
+            'yaml = clifftablib.formatters:YamlFormatter',
+            'html = clifftablib.formatters:HtmlFormatter',
+            'json = clifftablib.formatters:JsonFormatter',
             ],
         'cliff.formatter.show': [
-            'table = cliff.formatters.table:TableFormatter',
-            'shell = cliff.formatters.shell:ShellFormatter',
-            'yaml = cliff.formatters.tablibformatters:YamlFormatter',
-            'html = cliff.formatters.tablibformatters:HtmlFormatter',
-            'json = cliff.formatters.tablibformatters:JsonFormatter',
+            'yaml = clifftablib.formatters:YamlFormatter',
+            'html = clifftablib.formatters:HtmlFormatter',
+            'json = clifftablib.formatters:JsonFormatter',
             ],
         },
 

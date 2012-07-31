@@ -1,10 +1,11 @@
-=======================================================
- cliff -- Command Line Interface Formulation Framework
-=======================================================
+=============================================
+ cliff-tablib -- tablib Formatters for cliff
+=============================================
 
-cliff is a framework for building command line programs. It uses
-plugins to define sub-commands, output formatters, and other
-extensions.
+cliff-tablib includes formatters to be used in applications based on
+the cliff_ framework.
+
+.. _cliff: http://pypi.python.org/pypi/cliff
 
 Contents:
 
@@ -12,11 +13,8 @@ Contents:
    :maxdepth: 2
 
    introduction
-   demoapp
    list_commands
    show_commands
-   interactive_mode
-   classes
    install
    developers
    history
