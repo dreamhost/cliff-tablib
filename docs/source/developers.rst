@@ -2,23 +2,17 @@
  For Developers
 ================
 
-If you would like to contribute to cliff directly, these instructions
-should help you get started.  Patches, bug reports, and feature
-requests are all welcome through the `GitHub project
-<https://github.com/dreamhost/cliff>`_.  Contributions in the form of
-patches or pull requests are easier to integrate and will receive
-priority attention.
-
-.. note::
-
-  Before contributing new features to clif core, please consider
-  whether they should be implemented as an extension instead. The
-  architecture is highly pluggable precisely to keep the core small.
+If you would like to contribute to cliff-tablib directly, these
+instructions should help you get started.  Patches, bug reports, and
+feature requests are all welcome through the `GitHub project
+<https://github.com/dreamhost/cliff-tablib>`_.  Contributions in the
+form of patches or pull requests are easier to integrate and will
+receive priority attention.
 
 Building Documentation
 ======================
 
-The documentation for cliff is written in reStructuredText and
+The documentation for cliff-tablib is written in reStructuredText and
 converted to HTML using Sphinx. The build itself is driven by make.
 You will need the following packages in order to build the docs:
 
@@ -36,12 +30,12 @@ documentation::
     loading pickled environment... done
     building [html]: targets for 1 source files that are out of date
     updating environment: 1 added, 1 changed, 0 removed
-    reading sources... [100%] index                                                 
+    reading sources... [100%] index
     looking for now-outdated files... none found
     pickling environment... done
     done
     preparing documents... done
-    writing output... [100%] index                                                  
+    writing output... [100%] index
     writing additional files... genindex search
     copying static files... done
     dumping search index... done
@@ -49,17 +43,15 @@ documentation::
     build succeeded, 2 warnings.
 
     Build finished. The HTML pages are in build/html.
-    
+
 The output version of the documentation ends up in
 ``./docs/build/html`` inside your sandbox.
 
 Running Tests
 =============
 
-.. image:: https://secure.travis-ci.org/dhellmann/cliff.png?branch=master
-
-The test suite for clif uses tox_, which must be installed separately
-(``pip install tox``).
+The test suite for cliff-tablib uses tox_, which must be installed
+separately (``pip install tox``).
 
 To run the tests under Python 2.7 and 3.2, run ``tox`` from the top
 level directory of the git repository.
@@ -73,5 +65,3 @@ Add new tests by modifying an existing file or creating new script in
 the ``tests`` directory.
 
 .. _tox: http://codespeak.net/tox
-
-.. _developer-templates:

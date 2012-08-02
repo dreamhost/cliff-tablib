@@ -1,14 +1,16 @@
 =======================================================
- cliff -- Command Line Interface Formulation Framework
+ cliff-tablib -- Formatting Extensions for Cliff
 =======================================================
 
 .. image:: https://secure.travis-ci.org/dhellmann/cliff.png?branch=master
 
-cliff is a framework for building command line programs. It uses
-setuptools entry points to provide subcommands, output formatters, and
-other extensions.
+cliff-tablib is a set of formatter extensions for producing JSON,
+YAML, and HTML output in programs created with the cliff
+framework. Installing cliff-tablib activates these formatters for any
+cliff-based programs automatically.
 
 Documentation
 =============
 
-Documentation for cliff is hosted on readthedocs.org at http://readthedocs.org/docs/cliff/en/latest/
+Documentation for cliff-tablib is hosted on readthedocs.org at
+http://cliff-tablib.readthedocs.org/

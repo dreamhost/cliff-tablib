@@ -11,6 +11,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import datetime
 import sys, os
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -40,8 +41,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'cliff'
-copyright = u'2012, Doug Hellmann'
+project = u'cliff-tablib'
+copyright = u'%s, Doug Hellmann' % datetime.date.today().year
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -164,7 +165,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'cliffdoc'
+htmlhelp_basename = 'cliff-tablibdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -183,7 +184,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'cliff.tex', u'cliff Documentation',
+  ('index', 'cliff-tablib.tex', u'cliff-tablibDocumentation',
    u'Doug Hellmann', 'manual'),
 ]
 
@@ -213,7 +214,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'cliff', u'cliff Documentation',
+    ('index', 'cliff-tablib', u'cliff-tablib Documentation',
      [u'Doug Hellmann'], 1)
 ]
 
@@ -227,8 +228,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'cliff', u'cliff Documentation',
-   u'Doug Hellmann', 'cliff', 'One line description of project.',
+  ('index', 'cliff-tablib', u'cliff-tablib Documentation',
+   u'Doug Hellmann', 'cliff-tablib', 'One line description of project.',
    'Miscellaneous'),
 ]
 
