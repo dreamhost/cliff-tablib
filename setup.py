@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 
 # Change docs/source/conf.py too!
-VERSION = '1.0'
-
-# Bootstrap installation of Distribute
-import distribute_setup
-distribute_setup.use_setuptools()
+VERSION = '1.1'
 
 from setuptools import setup, find_packages
 
